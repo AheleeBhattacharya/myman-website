@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from "./Pages/Login/Login";
+import wokspaceForm from "./Pages/workspaceForm/ws";
 import Register from "./Pages/Register/Register";
 import SingleTask from './Pages/SingleTask/SingleTask';
 import { Switch, Route } from "react-router-dom";
@@ -16,6 +17,9 @@ function App() {
       </Route>
       <Route path="/home">
         <Home/>
+      </Route>
+      <Route path="/workspaceForm">
+        <WorkspaceForm/>
       </Route>
       <Route path="/" exact>
         <Login />
